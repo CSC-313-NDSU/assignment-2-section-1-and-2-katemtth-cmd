@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    /* More padding for sections */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    /* Dark footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h1,
+h2, 
+h3 {
+    color:midnightblue;
+    /* Bootstrap primary color */
+}
+
+.card {
+    transition: transform 0.3s;
+    /* Transition for scaling effect */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.table th {
+    background-color: #343a40;
+    /* Dark header for the table */
+    color: white;
+    /* White text */
+}
+
+.table td {
+    background-color: #ffffff;
+    /* White background for cells */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 576px) {
+    section {
+        padding: 20px 10px;
+        /* Less padding on smaller screens */
+    }
+}
+.carousel-item img {
+    width: 100%;
+    /* Make the images responsive */
+    height: 400px;
+    /* Set a specific height */
+    /*max-height: 400px;
+    /* Maximum height of the image */
+    object-fit: cover;
+    /* Ensure images cover the defined height */
+}
+.carousel-item {
+    padding: 20px;
+    /* Optional padding around carousel items */
+}
+@media (max-width: 576px) {
+    .carousel-item {
+        max-height: 250px;         /* Smaller max height on extra small screens */
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-item {
+        max-height: 300px;         /* Medium max height on small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        max-height: 400px;         /* Larger max height on larger screens */
+    }
+}
